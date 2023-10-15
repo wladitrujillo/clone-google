@@ -44,6 +44,19 @@
                     </div>
                 </div>
             </div>
+            <div class="actions">
+                <button mat-raised-button>Descargar</button>
+                <a (click)="toggleRemove()" mat-button>
+                    <mat-icon *ngIf="!remove">add_circle_outline</mat-icon>
+                    <mat-icon *ngIf="remove">remove_circle</mat-icon>
+                    <span *ngIf="!remove">Agregar a favoritos</span>
+                    <span *ngIf="remove">Remover de favoritos</span>
+                </a>
+            </div>
+            <div class="summary">
+                <mat-icon>phone_android</mat-icon>
+                <span style="margin-left: 15px;">Esta aplicación está disponible para tu dispositivo</span>
+            </div>
         </div>
         <div class="column-3">
             <img class="app-logo" src="assets/whatsapp-logo.png" alt="">
