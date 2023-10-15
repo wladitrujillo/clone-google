@@ -1,16 +1,25 @@
+<header>
+    <nav>
+        <img class="logo" src="assets/google-store.png" alt="">
+    </nav>
+</header>
 <div class="container">
-    <header>
-        <nav>
-            <img class="logo" src="assets/google-store.png" alt="">
-        </nav>
-    </header>
 
-    <section class="row">
-        <div class="column-8">
-            <h1 class="title">WhatsApp Messanger</h1>
-            <div class="description">
-                WhatsApp LLC
+
+    <section class="row app-section">
+        <div class="col col-xs-12">
+            <div class="app-info">
+                <img class="app-logo-mobile" src="/assets/whatsapp-logo-mobile.png" alt="">
+                <div class="app-info-description">
+                    <h1 class="title">WhatsApp Messanger</h1>
+                    <div class="description">
+                        WhatsApp LLC
+                    </div>
+                </div>
+
             </div>
+
+
             <div class="reviews">
                 <div class="layout-flex">
                     <div class="grid-container">
@@ -45,7 +54,7 @@
                 </div>
             </div>
             <div class="actions">
-                <button mat-raised-button>Descargar</button>
+                <button (click)="downloadFile()" mat-raised-button>Descargar</button>
                 <a (click)="toggleRemove()" mat-button>
                     <mat-icon *ngIf="!remove">add_circle_outline</mat-icon>
                     <mat-icon *ngIf="remove">remove_circle</mat-icon>
@@ -57,12 +66,8 @@
                 <mat-icon>phone_android</mat-icon>
                 <span style="margin-left: 15px;">Esta aplicación está disponible para tu dispositivo</span>
             </div>
-        </div>
-        <div class="column-3">
             <img class="app-logo" src="assets/whatsapp-logo.png" alt="">
         </div>
 
     </section>
-
-
 </div>

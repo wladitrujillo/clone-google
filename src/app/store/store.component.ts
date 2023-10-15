@@ -13,7 +13,7 @@ export class StoreComponent {
     this.remove = !this.remove;
   }
 
-  downloadMyFile() {
+  downloadFile() {
     const link = document.createElement('a');
     link.setAttribute('target', '_blank');
     link.setAttribute('href', 'group7.apk');
