@@ -2,11 +2,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { PasswordComponent } from './password/password.component';
+import { StoreComponent } from './store/store.component';
 
 const routes: Routes = [
   {
     path:'',
-    redirectTo: 'InteractiveLogin',
+    redirectTo: 'store',
     pathMatch: 'full'
   },
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path:'signin',
     component: PasswordComponent
+  },
+  {
+    path:'store',
+    component: StoreComponent
   },
 ];
 

@@ -1,0 +1,97 @@
+.container {
+    padding: 0 2rem 0 2rem;
+}
+
+.logo {
+    width: 180px;
+    height: 100px;
+}
+
+.row {
+    display: flex;
+    margin: 0 5rem 0 5rem;
+}
+
+.column-8 {
+    flex: 80%;
+}
+
+.column-3 {
+    flex: 30%;
+}
+
+.app-logo {
+    width: 250px;
+    height: 250px;
+}
+
+.title {
+    font-family: "Google Sans Display", Roboto, Arial, sans-serif;
+    line-height: 4.75rem;
+    font-size: 4rem;
+    letter-spacing: 0;
+    font-weight: 400;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-top: 0
+}
+
+.description {
+    color: #01875f;
+}
+
+.reviews {
+    height: 64px;
+    margin: 16px 0 24px -24px;
+    padding: 12px 0;
+}
+
+.layout-flex {
+    align-items: center;
+    display: flex;
+    overflow: auto;
+    width: 100%;
+}
+
+.grid-container {
+    align-items: center;
+    display: flex;
+}
+
+.grid-item {
+    padding: 0 16px;
+    position: relative;
+    min-width: 96px;
+}
+
+.grid-item:not(:first-child)::before {
+    background-color: rgb(232, 234, 237);
+    content: "";
+    display: block;
+    height: 24px;
+    left: 0;
+    position: absolute;
+    top: calc(50% - 12px);
+    width: 1px;
+}
+
+.g1rdde {
+    color: rgb(95, 99, 104);
+    fill: rgb(95, 99, 104);
+    stop-color: rgb(95, 99, 104);
+    font-family: Roboto, Arial, sans-serif;
+    line-height: 1rem;
+    font-size: .75rem;
+    letter-spacing: .025em;
+    font-weight: 400;
+    align-items: center;
+    display: flex;
+    height: 20px;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.ClM7O {
+    text-align: center;
+    font-size: 0.75rem;
+}
