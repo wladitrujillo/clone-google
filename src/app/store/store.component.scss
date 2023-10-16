@@ -11,11 +11,11 @@ header {
 
 
 .app-logo {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     position: absolute;
     right: 0;
-    top: 48px;
+    top: 0;
 }
 
 .app-logo-mobile {
@@ -70,13 +70,7 @@ header {
     height: 64px;
     margin: 16px 0 24px -24px;
     padding: 12px 0;
-}
-
-.layout-flex {
-    align-items: center;
-    display: flex;
-    overflow: auto;
-    width: 100%;
+    margin-left: 0;
 }
 
 .grid-container {
@@ -88,6 +82,10 @@ header {
     padding: 0 16px;
     position: relative;
     min-width: 96px;
+}
+
+.grid-item:first-child {
+    padding-left: 0;
 }
 
 .grid-item:not(:first-child)::before {
@@ -146,6 +144,19 @@ header {
     stop-color: rgb(95, 99, 104);
     display: flex;
     padding: 4px 0;
+}
+
+.disclaimer {
+    font-size: .875rem;
+    font-weight: 400;
+    margin-top: 20px;
+    letter-spacing: .0142857143em;
+    line-height: 1.25rem;
+    color: rgb(95, 99, 104);
+    fill: rgb(95, 99, 104);
+    stop-color: rgb(95, 99, 104);
+    display: flex;
+
 }
 
 .app-section {
